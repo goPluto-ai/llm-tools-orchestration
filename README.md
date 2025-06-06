@@ -1,6 +1,6 @@
 # 🛠️ @gopluto_ai/llm-tools-orchestration
 
-> Scalable LLM tool orchestration SDK with memory hooks, function execution, and GPT-4o (or any model) planning — built for production AI agents.
+> Scalable LLM tool orchestration SDK with memory hooks, parallel Multi function execution, and GPT-4o (or any model) planning — built for production AI agents. Alternative of MCP for AI or LLM Parallel multi tool calling which is easy to understand.
 
 ---
 
