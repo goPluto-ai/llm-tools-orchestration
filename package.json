@@ -1,11 +1,13 @@
 {
   "name": "@gopluto_ai/llm-tools-orchestration",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A scalable tools or functions orchestration SDK for LLM agents using OpenAI's /v1/responses API with memory, hooks, and tool planning support. Alternative of MCP for LLM tools orchestration.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c",
     "prepare": "npm run build"
