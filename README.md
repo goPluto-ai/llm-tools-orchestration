@@ -1,4 +1,4 @@
-# 🛠️ @gopluto/llm-tools-orchestration
+# 🛠️ @gopluto_ai/llm-tools-orchestration
 
 > Scalable LLM tool orchestration SDK with memory hooks, function execution, and GPT-4o (or any model) planning — built for production AI agents.
 
@@ -18,7 +18,7 @@
 ## 📦 Installation
 
 ```bash
-npm install @gopluto/llm-tools-orchestration
+npm install @gopluto_ai/llm-tools-orchestration
 ```
 
 ---
@@ -32,8 +32,8 @@ import {
   executeParallelTools,
   synthesizeFinalReply,
   registerHookProcessor
-} from "@gopluto/llm-tools-orchestration";
-import { getOpenAIResData } from "@gopluto/llm-tools-orchestration/dist/openaiHelpers";
+} from "@gopluto_ai/llm-tools-orchestration";
+import { getOpenAIResData } from "@gopluto_ai/llm-tools-orchestration/dist/openaiHelpers";
 
 registerHookProcessor("logStart", async (memory) => {
   console.log("🧠 Memory:", memory);

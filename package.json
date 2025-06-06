@@ -1,10 +1,11 @@
 {
-  "name": "@gopluto/llm-tools-orchestration",
-  "version": "1.0.0",
-  "description": "Scalable llm tool orchestration SDK with memory, hooks, and LLM planning",
+  "name": "@gopluto_ai/llm-tools-orchestration",
+  "version": "1.0.1",
+  "description": "A scalable tools or functions orchestration SDK for LLM agents using OpenAI's /v1/responses API with memory, hooks, and tool planning support. Alternative of MCP for LLM tools orchestration.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "build": "rollup -c",
     "prepare": "npm run build"
@@ -16,10 +17,32 @@
     "function-calling",
     "llm-tools-orchestration",
     "llm-tools",
-    "mcp-alternative"
+    "mcp-alternative",
+    "llm-agents",
+    "llm-functions",
+    "llm-memory",
+    "llm-hooks",
+    "llm-tool-planning",
+    "llm-sdk",
+    "gopluto",
+    "gopluto-ai",
+    "goplutoai",
+    "gopluto-ai-sdk",
+    "llm-orchestration",
+    "llm-toolkit",
+    "llm tool orchestration",
+    "llm tools orchestration",
+    "llm tools",
+    "llm functions",
+    "llm memory",
+    "llm hooks",
+    "llm tool planning"
   ],
   "author": "GoPluto Team",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.3",
     "@types/node": "^22.15.29",
