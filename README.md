@@ -19,6 +19,8 @@
 
 ```bash
 npm install @gopluto_ai/llm-tools-orchestration
+Set in .env
+OPENAI_API_KEY = xxxxxxxxxxxx
 ```
 
 ---
@@ -70,7 +72,7 @@ const messages = {
 (async () => {
   const plan = await planTools(messages, getOpenAIResData, "gpt-4o");
   const results = await executeParallelTools(plan.neededTools, plan.args, { userId: "xyz" });
-  const reply = await synthesizeFinalReply(messages.userMessage, results, messages, getOpenAIResData, "gpt-4o");
+  const reply = await synthesizeFinalReply(messages.userMessage, results, messages, plan.tools, getOpenAIResData, "gpt-4o");
 
   console.log("🧠 Final AI Reply:", reply);
 })();

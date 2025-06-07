@@ -39,7 +39,8 @@ export const planTools = async (
     agentMemory?: Record<string, any>;
     userMessage: string;
   },
-  getOpenAIResData: Function
+  getOpenAIResData: Function,
+  modal: string = "gpt-4o"
 ): Promise<{
   tools?: any[];
   neededTools: string[];
@@ -65,7 +66,7 @@ export const planTools = async (
 
   console.log("🧠 Planning initiated with:", messagesData);
 
-  const final = await getOpenAIResData(messagesData, "gpt-4o");
+  const final = await getOpenAIResData(messagesData, modal);
 
   console.log("📩 Response from OpenAI:", final);
 
@@ -144,7 +145,8 @@ export const synthesizeFinalReply = async ( userMessage: string,
   toolResults: any[],  
   messages: any,
   tools: [],
-  getOpenAIResData: Function          
+  getOpenAIResData: Function,
+  modal: string = "gpt-4o"          
 ) =>{
   const toolResultsWithNames = toolResults.map(({ name, result, call_id }) => ({
     recipient_name: name,
@@ -168,7 +170,7 @@ Please generate a useful, human-like reply summarizing and give the data what’
   };
 
   console.log("Synthesizing final reply with messages:");
-  const final = await getOpenAIResData(messagesData, "gpt-4o");
+  const final = await getOpenAIResData(messagesData, modal);
   console.log("Final synthesized reply:");
   return final || { aiResponse: "No reply generated." };
 }
