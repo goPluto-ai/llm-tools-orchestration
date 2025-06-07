@@ -114,6 +114,13 @@ This gives you:
 
 ---
 
+## Contact
+```
+ Email: shubham@e2ecapital.com
+ Contact: +91 9110035665
+ Whatsapp: https://wa.me/919110035665
+```
+
 ## 📝 License
 
 MIT © [GoPluto.ai](https://gopluto.ai)
